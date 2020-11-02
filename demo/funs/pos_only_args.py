@@ -4,4 +4,4 @@ def fun(name, age, /):
 
 
 fun('Abc', 20)
-fun(name= 'Abc', age = 20)
+fun(name='Abc', age=20)
