@@ -15,6 +15,10 @@ class Time:
         else:
             raise ValueError('Invalid Hours')
 
+    @property
+    def totalseconds(self):
+        return self.__h * 3600 + self.__m * 60 + self.__s
+
 
 t = Time(10, 20, 30)
 t.hours = 20  # Setter method of property
