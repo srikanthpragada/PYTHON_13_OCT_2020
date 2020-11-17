@@ -1,6 +1,7 @@
 class SavingsAccount:
     # Class attribute
     minbal = 5000
+
     # Constructor
     def __init__(self, acno, ahname, balance=0):
         # Object attributes
@@ -21,7 +22,7 @@ class SavingsAccount:
         if self.balance - SavingsAccount.minbal >= amount:
             self.balance -= amount
         else:
-            print("Sorry! Insufficient balance!")
+            raise ValueError('Insufficient Balance')
 
 
 s1 = SavingsAccount(1001, 'Scott', 10000)  # create object, call __init__()
