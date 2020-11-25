@@ -1,0 +1,4 @@
+AWS Admin,1000000
+Data Eng.,500000
+
+Angular Dev.,550000
